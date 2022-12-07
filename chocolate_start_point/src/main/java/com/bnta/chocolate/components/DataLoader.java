@@ -31,6 +31,15 @@ public class DataLoader implements ApplicationRunner {
         Chocolate maltesers = new Chocolate("Maltesers", 20, estate2);
         Chocolate galaxy = new Chocolate("Galaxy", 40, estate3);
 
+        estateRepository.save(estate1);
+        estateRepository.save(estate2);
+        estateRepository.save(estate3);
+
+        chocolateRepository.save(bounty);
+        chocolateRepository.save(maltesers);
+        chocolateRepository.save(galaxy);
+
+
 
     }
 
