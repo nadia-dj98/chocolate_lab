@@ -20,4 +20,8 @@ public class ChocolateService {
     }
     public List<Chocolate> getAllChocolates(){return chocolateRepository.findAll();}
 
+    public List<Chocolate> getSingleChocolate(String name) {
+        return chocolateRepository.findByName(name);
+    }
+
 }
